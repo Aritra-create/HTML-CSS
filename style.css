@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+/* design of navbar */
+#navbar{
+    height: 45px;
+    background-color: #fff;
+    color: #000;
+}
+
+#navbar a{
+    color: #000;
+    display: inline-block;
+    margin: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+#nav_home{
+    margin-left: 20%!important;
+}
+
+.icon{
+    float: right;
+    overflow: hidden;
+    height: 100%;
+}
+
+.icon img{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* design of the home section */
+#home{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    /* background-color: blanchedalmond; */
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('HTML-CSS/img1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#main{
+    margin-left: 10%;
+    padding: 20px 25px;
+    width: 35%;
+    height: 230px;
+    align-self: center;
+    overflow: hidden;
+    border: transparent;
+    background-color: rgb(211, 115, 144);
+    color: #fff;
+    opacity: 0.7;
+}
+
+#main h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+/* Services Section */
+#services-container{
+    background: #fa767d;
+    background: linear-gradient(90deg, #f277ae, #f5eb6f);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#services{
+    margin: 20px 34px;
+    display: flex;
+}
+#h-primary{
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: center;
+}
+#services .box{ 
+    padding: 20px;
+    margin: 2px 55px;
+    background: #fff;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+    display: block;
+   width: 100%;
+   height: 195px;
+   margin: auto;
+   border-top-right-radius: 50px;
+}
+
+.h-secondary{
+    font-size: 1.35rem;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+} 
+
+.button {
+    display: block;
+    margin: auto;
+    height: 50px;
+    margin: auto;
+    background-color: #e9bed1;
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    padding: 10px 49px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+
+@media screen and (max-width: 1120px) {
+    *{
+        font-size: 17px;
+    }
+    #main{
+        width: 40%;
+    }
+    #main h1{
+        font-size: 2.2rem;
+    }
+    #nav_home{
+        margin-left: 15%!important;
+    }
+    #services{
+        margin: 20px 20px;
+    }
+    #h-primary{
+        font-size: 2rem;
+       }
+   #services .box{
+    margin: 2px 35px;
+   }
+   #services .box img{ 
+    height: 175px;
+   }
+   
+}
+
+@media screen and (max-width: 880px) {
+    *{
+        font-size: 16px;
+    }
+    #nav_home{
+        margin-left: 10%!important;
+    }
+    #main{
+        width: 48%;
+    }
+   #services .box{
+    margin: 2px 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 15px;
+    }
+    #navbar a{
+        margin: 10px 15px;
+    }
+    #nav_home{
+        margin-left: 5%!important;
+    }
+    #main{
+        width: 55%;
+    }
+    #services{
+        flex-direction: column;
+    }
+    #h-primary{
+        font-size: 1.8rem;
+       }
+    #services .box{
+        margin: 10px 125px;
+      }
+
+      #services .box img{
+        height: 310px;
+      }
+}
+
+@media screen and (max-width: 680px) {
+    #navbar a{
+        margin: 10px 10px;
+    }
+    #services .box{
+        margin: 10px 90px;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar{
+        height: 100px;
+    }
+    #navitems{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* grid-auto-flow: row; */
+    }
+    #navbar a{
+        margin: 5px 10px;
+    }
+    #services .box{
+        margin: 10px 60px;
+      }
+}
+
+@media screen and (max-width: 550px) {
+    #main{
+        width: 65%;
+    }
+    #services .box{
+        margin: 10px 50px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+    services .box{
+        margin: 10px 25px;
+      }
+
+      #services .box img{
+        height: 250px;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+    #services .box{
+        margin: 10px 10px;
+      }
+
+      #services .box img{
+        height: 250px;
+      }
+}
